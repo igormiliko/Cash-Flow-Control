@@ -1,0 +1,1341 @@
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color:#494e6b;
+}
+
+header {
+    background-color: #192231;
+    height: 50px;
+    width: 98.4vw;
+    padding: 10px;
+    line-height: 50px;
+}
+
+
+/*----------------CABEÇALHO(NAVBAR)----------------*/
+#logo {
+    margin-top: 5px;
+    display: inline-flex;
+    margin-left: 5px;
+    font-size: 28pt;
+    width: 40%;
+}
+
+#config {
+    font-size: 18pt;
+    color:  #abb1bd;
+    display: inline-flex;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: ghostwhite;
+    margin-right: 25px;
+    margin-top: 5px;
+    text-decoration: none; 
+    justify-content: center;
+    align-items: center; 
+}  
+
+#config:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#user {
+    font-size: 18pt;
+    color:   #263349;
+    display: inline-flex;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: ghostwhite;
+    margin-right: 25px;
+    margin-top: 5px;
+    text-decoration: none; 
+    justify-content: center;
+    align-items: center; 
+}
+
+#user:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*----------------FLUXO DE CAIXA----------------*/
+
+#fluxoDeCaixa {
+    position: relative;
+    display: inline-block;
+    background-color:#494e6b;
+    height: 713px;
+    width: 49.2%;
+    padding: 5px;
+}
+
+#tituloFluxo{
+    display: inline-block;
+    font-family: Calibri;
+    color: ghostwhite;
+    background-color: #192231;
+    font-size: 22pt;
+    height: 25px;
+    width: 99%;
+    text-align: center;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 3px;
+}
+
+#calendar{
+    margin-right: 5px;
+    margin-top: 25px;
+    display: flex;
+    float: right;
+    background-color: #DFDCE3;
+    width:140px;
+    height:30px;
+    padding: 5px;
+    margin-left: 5px;
+    align-items: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thick;
+    border-color:#192231;
+}
+
+#inpCal{
+    border: none;
+    outline: none;
+    background: none;
+    font-family: Calibri;
+}
+
+#registroCaixa {
+    background-color:#DFDCE3;
+    padding: 5px;
+    border-radius: 5px;
+    width: 97.4%;
+    height: 75%;
+    margin-top: 5px;
+    font-family: Calibri;
+    overflow:auto; 
+}
+
+#codig{
+    width:5%;
+    background-color: #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#qtd{
+    width: 6%;
+    background-color:  #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#inpQtd{
+    width:90%;
+    height: 100%;
+    text-decoration: none;
+    background: none;
+    border: none;
+    overflow: none;
+    font-family: Calibri;
+    font-size: 14pt;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+#nome{
+    width:50%;
+    background-color:  #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#entr{
+    width: 20%;
+    background-color:   #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#saida{
+    width: 20%;
+    background-color: #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+#codig0{
+    width: 5%;
+    background-color:#c4c6cc ;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#qtd0{
+    width: 5%;
+    background-color:    #abb1bd ;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#nome0{
+    width: 50%;
+    background-color:#c4c6cc;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#entr0{
+    width: 20%;
+    background-color:  #abb1bd ;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#saida0{
+    width: 20%;
+    background-color:  #c4c6cc ;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#totalCaixa{
+    display: inline-block;
+    font-family: Calibri;
+    padding-left: 15px;
+    font-size: 22pt;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    margin-top: 25px;
+    background-color:#DFDCE3;
+    border-style: solid;
+    border-width: thick;
+    border-color:#192231;
+}
+
+#resultCaixa{
+    width: 100px;
+    height: 40px;
+    background-color: #DFDCE3;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-family: Calibri;
+    font-size: 22pt;
+    line-height: 40px;
+}
+
+#tutor{
+    position: absolute;
+    width: 33%;
+    height: 723px;
+    background-color:#DFDCE3;
+    top: 70px;
+    left: 33.789%;
+}
+
+/*----------------CADASTRAR PRODUTOS----------------*/
+
+#cdstrProdt{
+    position: relative;
+    display: inline-block;
+    background-color: #494e6b;
+    height: 715px;
+    width: 49.2%;
+    padding: 5px;
+    padding-top: 2.8px;
+    float: right;
+    margin: auto;
+}
+
+#formCdstrPrdts{
+    display: inline-block;
+    height: 30.5%;
+    width: 100%;
+    background-color: #494e6b;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#tituloCdstrPrdt{
+    font-family: Calibri;
+    font-size: 22pt;
+    color: ghostwhite;
+    background-color: #192231;
+    text-align: center;
+    border-radius: 5px;
+    height: 40px; 
+    width: 99.2%;
+}
+
+#codForm{
+    font-family: Calibri;
+    font-size: 18pt;
+    width: 97.5%;
+    background-color: #DFDCE3;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#nameForm{
+    font-family: Calibri;
+    font-size: 18pt;
+    width: 97.5%;
+    background-color: #DFDCE3;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#costForm{
+    font-family: Calibri;
+    font-size: 18pt;
+    width: 97.5%;
+    background-color: #DFDCE3;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#inpCod{
+    border: none;
+    background: none;
+    outline: none;
+    width:78%;
+    margin-left: 8px;
+    font-size: 18pt;
+}
+
+#inpName{
+    border: none;
+    background: none;
+    outline: none;
+    width:78%;
+    margin-left: 8px;
+    font-size: 18pt;
+}
+
+#inpCost{
+    border: none;
+    background: none;
+    outline: none;
+    width:78%;
+    margin-left: 8px;
+    font-size: 18pt;
+}
+
+#butCad{
+    margin-top: 5px;
+    background-color: rgb(74, 201, 74);
+    border-radius: 5px;
+    padding: 5px;
+    width: 47.6%;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+#butCad:hover {
+    margin-top: 5px;
+    background-color: rgb(62, 255, 62);
+    border-radius: 5px;
+    padding: 5px;
+    width: 47.6%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#cad{
+    border: none;
+    background: none;
+    outline: none;
+    font-family: Calibri;
+    font-size: 18pt;
+    cursor: pointer;
+}
+
+#butLimp{
+    margin-top: 5px;
+    background-color: rgb(209, 71, 71);
+    border-radius: 5px;
+    padding: 5px;
+    width: 47.6%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#butLimp:hover {
+    margin-top: 5px;
+    background-color: rgb(255, 42, 42);
+    border-radius: 5px;
+    padding: 5px;
+    width: 47.6%;
+    text-align: center;
+    display: inline-block;
+}
+
+#limp{
+    border: none;
+    background: none;
+    outline: none;
+    font-family: Calibri;
+    font-size: 18pt;
+    cursor: pointer;
+}
+
+#listDePrdts{
+    display: inline-block;
+    height: 65%;
+    width: 97.5%;
+    background-color: rgb(174, 175, 182);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+
+#tituloDaList { 
+    font-family: Calibri;
+    font-size: 22pt;
+    color: ghostwhite;
+    background-color: #192231;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    height: 40px; 
+}
+
+#srchBoxList { 
+    font-family: Calibri;
+    font-size: 14pt;
+    color: ghostwhite;
+    background-color: #444756;
+    margin: auto;
+    text-align: left;
+    border-radius: 50px;
+    height: 35px; 
+    margin-top: 5px;
+    line-height: 35px;
+    padding: 5px;
+}
+
+#inputSrch {
+    font-family: Calibri;
+    font-size: 18pt;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: 10px;
+    width: 90%;
+}
+
+.searchBtn{
+    color: ghostwhite;
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background:#192231;
+    display:flex;
+    text-decoration: none; 
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 15px;        
+}
+
+.editBtn{
+    font-size: 11pt;
+    color: #192231;
+    float: right;
+    width: 20px;
+    height: 10px;
+    display:inline-flex;
+    text-decoration: none; 
+    justify-content: center;
+    align-items: center; 
+    margin-right: 5px;
+    margin-top: 2.5px;
+    cursor: pointer;
+}
+
+.editBtn:hover{
+    transform: scale(1.2);
+    color: #2e3e5a;
+}
+
+.trashBtn{
+    font-size: 11pt;
+    color: rgb(209, 71, 71);
+    float: right;
+    width: 20px;
+    height: 10px;
+    display:flex;
+    text-decoration: none; 
+    justify-content: center;
+    align-items: center; 
+    margin-right: 5px;
+    margin-top: 2.5px;
+    cursor: pointer;
+}
+
+.trashBtn:hover{
+    transform: scale(1.1);
+    color: rgb(255, 42, 42);
+}
+
+.searchBtn:hover{
+    transform: scale(1.1)
+}
+
+#list {
+    border-radius: 5px;
+    height: 77.1%;
+    width: 97%;
+    margin-top: 5px;
+    background-color:  #DFDCE3;
+    padding: 5px;
+    overflow: auto;
+}
+
+#tableList{
+    width: 100%;
+    }
+
+
+#codList{
+    font-family: Calibri;
+    width: 25%;
+    background-color: #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#nomeList{
+    font-family: Calibri;
+    width: 50%;
+    background-color: #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#precoList{
+    font-family: Calibri;
+    width: 25%;
+    background-color: #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#codList0{
+    font-family: Calibri;
+    width: 25%;
+    background-color: #abb1bd ;
+    color:black;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#nomeList0 {
+    font-family: Calibri;
+    width: 50%;
+    background-color: #c4c6cc ;
+    color:black;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#precoList0{
+    font-family: Calibri;
+    width: 25%;
+    background-color: #abb1bd ;
+    color:black;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.plusEntr {
+    color:  rgb(59, 124, 59);
+    cursor: pointer;
+}
+
+.plusEntr:hover{
+    transform: scale(1.1);
+    color: rgb(70, 172, 70);
+}
+
+.plusExit{
+    color: rgb(209, 71, 71);  
+    cursor: pointer;
+}
+
+.plusExit:hover{
+    transform: scale(1.1);
+    color: rgb(255, 42, 42);
+}
+
+/*----------------FOOTER----------------*/
+
+footer{
+    height: 88px;
+    background-color: #263349;
+    width: 100vw;
+    width: 100%;
+    color: ghostwhite;
+    line-height: 88px;
+    font-family: Calibri;
+}
+
+#credit{
+    margin: auto;
+    display: inline-block;
+    margin-left: 23%;
+    width: 250px;
+}
+
+#inst{
+    color: ghostwhite;
+    margin-left: 40px;
+    display: inline-block;
+    font-size: 17pt;
+    text-decoration: none;
+}
+
+#google{
+    color: ghostwhite;
+    display: inline-block;
+    margin-left:15px;
+    font-size: 17pt;
+    text-decoration: none;
+}
+
+#face{
+    color: ghostwhite;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 17pt;
+    text-decoration: none;
+}
+
+#git{
+    color: ghostwhite;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 17pt;
+    text-decoration: none;
+}
+
+#inst:hover{
+    transform: scale(1.2);
+    text-decoration: none;
+}
+#google:hover{
+    transform: scale(1.2);
+    text-decoration: none;
+}
+#face:hover{
+    transform: scale(1.2);
+    text-decoration: none;
+}
+#git:hover{
+    transform: scale(1.2);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 736px){
+    
+body {
+
+    margin: 0;
+    background-color:#494e6b;
+    overflow: auto;
+}
+
+header {
+    background-color: #192231;
+    height: 40px;
+    width: 98.4vw;
+    padding: 10px;
+    line-height: 50px;
+}
+
+
+/*----------------CABEÇALHO(NAVBAR)----------------*/
+#logo {
+    margin-top: 5px;
+    display: inline-flex;
+    margin-left: 5px;
+    font-size: 28pt;
+    width: 60%;
+}
+
+#config {
+    font-size: 12pt;
+    color:  #abb1bd;
+    display: inline-flex;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: ghostwhite;
+    margin-right: 25px;
+    margin-top: 5px;
+    text-decoration: none; 
+    justify-content: center;
+    align-items: center; 
+}  
+
+#config:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#user {
+    font-size:12pt;
+    color:   #263349;
+    display: inline-flex;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: ghostwhite;
+    margin-right: 25px;
+    margin-top: 5px;
+    text-decoration: none; 
+    justify-content: center;
+    align-items: center; 
+}
+
+#user:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*----------------FLUXO DE CAIXA----------------*/
+
+#fluxoDeCaixa {
+    position: relative;
+    display: inline-block;
+    background-color:#494e6b;
+    height: 713px;
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+}
+
+#tituloFluxo{
+    display: inline-block;
+    font-family: Calibri;
+    color: ghostwhite;
+    background-color: #192231;
+    font-size: 22pt;
+    height: 25px;
+    width: 99%;
+    text-align: center;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 3px;
+}
+
+#calendar{
+    font-size: 22pt;
+    margin-right: 5px;
+    margin-top: 25px;
+    display: flex;
+    float: right;
+    background-color: #DFDCE3;
+    width:40px;
+    height:30px;
+    padding: 5px;
+    margin-left: 5px;
+    align-items: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thick;
+    border-color:#192231;
+}
+
+#inpCal{
+    border: none;
+    outline: none;
+    background: none;
+    font-family: Calibri;
+}
+
+#registroCaixa {
+    background-color:#DFDCE3;
+    padding: 5px;
+    border-radius: 5px;
+    width: 97.4%;
+    height: 75%;
+    margin-top: 5px;
+    font-family: Calibri;
+    overflow:auto; 
+}
+
+#codig{
+    width:5%;
+    background-color: #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#qtd{
+    width: 6%;
+    background-color:  #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#inpQtd{
+    width:90%;
+    height: 100%;
+    text-decoration: none;
+    background: none;
+    border: none;
+    overflow: none;
+    font-family: Calibri;
+    font-size: 14pt;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+#nome{
+    width:50%;
+    background-color:  #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#entr{
+    width: 20%;
+    background-color:   #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#saida{
+    width: 20%;
+    background-color: #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+#codig0{
+    width: 5%;
+    background-color:#c4c6cc ;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#qtd0{
+    width: 5%;
+    background-color:    #abb1bd ;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#nome0{
+    width: 50%;
+    background-color:#c4c6cc;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#entr0{
+    width: 20%;
+    background-color:  #abb1bd ;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#saida0{
+    width: 20%;
+    background-color:  #c4c6cc ;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#totalCaixa{
+    display: inline-block;
+    font-family: Calibri;
+    padding-left: 15px;
+    font-size: 22pt;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    margin-top: 25px;
+    background-color:#DFDCE3;
+    border-style: solid;
+    border-width: thick;
+    border-color:#192231;
+}
+
+#resultCaixa{
+    width: 100px;
+    height: 40px;
+    background-color: #DFDCE3;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-family: Calibri;
+    font-size: 22pt;
+    line-height: 40px;
+}
+
+#tutor{
+    position: absolute;
+    width: 33%;
+    height: 723px;
+    background-color:#DFDCE3;
+    top: 70px;
+    left: 33.789%;
+}
+
+/*----------------CADASTRAR PRODUTOS----------------*/
+
+#cdstrProdt{
+    background-color: #494e6b;
+    height: 726px;
+    width: 100%;
+    padding: 5px;
+    padding-top: 2.8px;
+    left: 5px;
+}
+
+#formCdstrPrdts{
+    display: inline-block;
+    height: 30.5%;
+    width: 100%;
+    background-color: #494e6b;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#tituloCdstrPrdt{
+    font-family: Calibri;
+    font-size: 22pt;
+    color: ghostwhite;
+    background-color: #192231;
+    text-align: center;
+    border-radius: 5px;
+    height: 40px; 
+    width: 100%;
+}
+
+#codForm{
+    font-family: Calibri;
+    font-size: 14pt;
+    width: 97.5%;
+    background-color: #DFDCE3;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#nameForm{
+    font-family: Calibri;
+    font-size: 14pt;
+    width: 97.5%;
+    background-color: #DFDCE3;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#costForm{
+    font-family: Calibri;
+    font-size: 14pt;
+    width: 97.5%;
+    background-color: #DFDCE3;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#inpCod{
+    border: none;
+    background: none;
+    outline: none;
+    width:78%;
+    margin-left: 8px;
+    font-size: 18pt;
+}
+
+#inpName{
+    border: none;
+    background: none;
+    outline: none;
+    width:78%;
+    margin-left: 8px;
+    font-size: 18pt;
+}
+
+#inpCost{
+    border: none;
+    background: none;
+    outline: none;
+    width:78%;
+    margin-left: 8px;
+    font-size: 18pt;
+}
+
+#butCad{
+    margin-top: 5px;
+    background-color: rgb(74, 201, 74);
+    border-radius: 5px;
+    padding: 5px;
+    width: 46.5%;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+#butCad:hover {
+    margin-top: 5px;
+    background-color: rgb(62, 255, 62);
+    border-radius: 5px;
+    padding: 5px;
+    width: 46.5%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#cad{
+    border: none;
+    background: none;
+    outline: none;
+    font-family: Calibri;
+    font-size: 18pt;
+    cursor: pointer;
+}
+
+#butLimp{
+    margin-top: 5px;
+    background-color: rgb(209, 71, 71);
+    border-radius: 5px;
+    padding: 5px;
+    width: 46.5%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#butLimp:hover {
+    margin-top: 5px;
+    background-color: rgb(255, 42, 42);
+    border-radius: 5px;
+    padding: 5px;
+    width:46.5%;
+    text-align: center;
+    display: inline-block;
+}
+
+#limp{
+    border: none;
+    background: none;
+    outline: none;
+    font-family: Calibri;
+    font-size: 18pt;
+    cursor: pointer;
+}
+
+#listDePrdts{
+    display: inline-block;
+    height: 65%;
+    width: 97.5%;
+    background-color: rgb(174, 175, 182);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+
+#tituloDaList { 
+    font-family: Calibri;
+    font-size: 22pt;
+    color: ghostwhite;
+    background-color: #192231;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    height: 40px; 
+}
+
+#srchBoxList { 
+    font-family: Calibri;
+    font-size: 14pt;
+    color: ghostwhite;
+    background-color: #444756;
+    margin: auto;
+    text-align: left;
+    border-radius: 50px;
+    height: 35px; 
+    margin-top: 5px;
+    line-height: 35px;
+    padding: 5px;
+}
+
+#inputSrch {
+    font-family: Calibri;
+    font-size: 14pt;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: 10px;
+    width: 75%;
+}
+
+.searchBtn{
+    color: ghostwhite;
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background:#192231;
+    text-decoration: none; 
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 15px;        
+}
+
+.editBtn{
+    font-size: 11pt;
+    color: #192231;
+    float: right;
+    width: 20px;
+    height: 10px;
+    display:inline-flex;
+    text-decoration: none; 
+    justify-content: center;
+    align-items: center; 
+    margin-right: 5px;
+    margin-top: 2.5px;
+    cursor: pointer;
+}
+
+.editBtn:hover{
+    transform: scale(1.2);
+    color: #2e3e5a;
+}
+
+.trashBtn{
+    font-size: 11pt;
+    color: rgb(209, 71, 71);
+    float: right;
+    width: 20px;
+    height: 10px;
+    display:flex;
+    text-decoration: none; 
+    justify-content: center;
+    align-items: center; 
+    margin-right: 5px;
+    margin-top: 2.5px;
+    cursor: pointer;
+}
+
+.trashBtn:hover{
+    transform: scale(1.1);
+    color: rgb(255, 42, 42);
+}
+
+.searchBtn:hover{
+    transform: scale(1.1)
+}
+
+/*------------------------Lista de produtos ----------------------*/
+
+#list {
+    border-radius: 5px;
+    height: 76.1%;
+    width: 97%;
+    margin-top: 5px;
+    background-color:  #DFDCE3;
+    padding: 5px;
+    overflow: auto;
+}
+
+#tableList{
+    width: 100%;
+    }
+
+
+#codList{
+    font-family: Calibri;
+    width: 25%;
+    background-color: #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#nomeList{
+    font-family: Calibri;
+    width: 50%;
+    background-color: #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#precoList{
+    font-family: Calibri;
+    width: 25%;
+    background-color: #192231 ;
+    color: ghostwhite;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#codList0{
+    font-family: Calibri;
+    width: 25%;
+    background-color: #abb1bd ;
+    color:black;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#nomeList0 {
+    font-family: Calibri;
+    width: 50%;
+    background-color: #c4c6cc ;
+    color:black;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#precoList0{
+    font-family: Calibri;
+    width: 25%;
+    background-color: #abb1bd ;
+    color:black;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.plusEntr {
+    color:  rgb(59, 124, 59);
+    cursor: pointer;
+}
+
+.plusEntr:hover{
+    transform: scale(1.1);
+    color: rgb(70, 172, 70);
+}
+
+.plusExit{
+    color: rgb(209, 71, 71);  
+    cursor: pointer;
+}
+
+.plusExit:hover{
+    transform: scale(1.1);
+    color: rgb(255, 42, 42);
+}
+
+/*----------------FOOTER----------------*/
+
+footer{
+    height: 88px;
+    background-color: #263349;
+    width: 100vw;
+    width: 100%;
+    color: ghostwhite;
+    line-height: 88px;
+    font-family: Calibri;
+}
+
+#credit{
+    display: inline-block;
+    margin-left: 29%;
+    width: 250px;
+}
+
+#inst{
+    color: ghostwhite;
+    margin-left: 48px;
+    display: inline-block;
+    font-size: 17pt;
+    text-decoration: none;
+}
+
+#google{
+    color: ghostwhite;
+    display: inline-block;
+    margin-left:15px;
+    font-size: 17pt;
+    text-decoration: none;
+}
+
+#face{
+    color: ghostwhite;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 17pt;
+    text-decoration: none;
+}
+
+#git{
+    color: ghostwhite;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 17pt;
+    text-decoration: none;
+}
+
+#inst:hover{
+    transform: scale(1.2);
+    text-decoration: none;
+}
+#google:hover{
+    transform: scale(1.2);
+    text-decoration: none;
+}
+#face:hover{
+    transform: scale(1.2);
+    text-decoration: none;
+}
+#git:hover{
+    transform: scale(1.2);
+    text-decoration: none;
+}
+}
